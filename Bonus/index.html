@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title></title>
+	</head>
+	<body>
+    <header>
+			<div class="logo">
+				<img src="logo.png" alt="">
+			</div>
+
+
+    </header>
+
+		<div class="filtro">
+			<label>Filtro album per genere</label>
+			<select class="" name="">
+				<option value=""></option>
+				<option value="pop">pop</option>
+				<option value="rock">rock</option>
+				<option value="metal">metal</option>
+				<option value="jazz">jazz</option>
+			</select>
+		</div>
+
+
+		<div class="box">
+
+
+		</div>
+
+		<script class="album-template" type="text/x-handlebars-template">  
+				<div class="container" data-genre="{{genre}}">
+					<div class="album">
+						<img src="{{cover}}" />
+					</div>
+					<div class="titolo">
+						<h3>{{title}}</h3>
+						<p>{{artist}}</p>
+						<p>{{year}}</p>
+					</div>
+				</div>
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
